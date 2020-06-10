@@ -82,8 +82,8 @@ public class FuncionarioSteps {
 
 	}
 
-	@Dado("defino o ponto de extremidade da API de serviço do funcionário DELETE")
-	public void definoOPontoDeExtremidadeDaAPIDeServiçoDoFuncionárioDELETE() {
+	@Dado("defino o ponto de extremidade da API de serviço do funcionario DELETE")
+	public void definoOPontoDeExtremidadeDaAPIDeServiçoDoFuncionarioDELETE() {
 		requestDelete = new HttpDelete(DELETE_URL + CREATED_ID);
 
 	}
