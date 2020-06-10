@@ -37,8 +37,8 @@ public class FuncionarioSteps {
 	public static final String DELETE_URL = "http://dummy.restapiexample.com/api/v1/delete/";
 	public static final int RESPONSE_200 = 200;
 
-	@Dado("defino o ponto de extremidade da API de serviço do funcionario")
-	public void definoOPontoDeExtremidadeDaAPIDeServiçoDoFuncionario() {
+	@Dado("defino o ponto de extremidade da API de servico do funcionario")
+	public void definoOPontoDeExtremidadeDaAPIDeServicoDoFuncionario() {
 		requestPost = new HttpPost(CREATE_URL);
 
 	}
@@ -50,8 +50,8 @@ public class FuncionarioSteps {
 		headers.add("Content-Type", "application/json");
 	}
 
-	@Quando("envio uma solicitaçao HTTP POST")
-	public void envio_uma_solicitaçao_HTTP_POST() throws ClientProtocolException, IOException {
+	@Quando("envio uma solicitacao HTTP POST")
+	public void envio_uma_solicitacao_HTTP_POST() throws ClientProtocolException, IOException {
 		StringEntity body = new StringEntity("{\"name\":\"" + CREATED_NAME + "\",\"salary\":\"1000\",\"age\":\"26\"}");
 		requestPost.setEntity(body);
 		httpResponse = HttpClientBuilder.create().build().execute(requestPost);
@@ -68,8 +68,8 @@ public class FuncionarioSteps {
 		assertNotNull(CREATED_ID);
 	}
 
-	@Dado("defino o ponto de extremidade da API de serviço do funcionario GET")
-	public void definoOPontoDeExtremidadeDaAPIDeServiçoDoFuncionarioGET() {
+	@Dado("defino o ponto de extremidade da API de servico do funcionario GET")
+	public void definoOPontoDeExtremidadeDaAPIDeServicoDoFuncionarioGET() {
 		requestGet = new HttpGet(GET_URL + 1);
 	}
 

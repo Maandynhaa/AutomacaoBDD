@@ -18,7 +18,6 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
-import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
 
 public class LoginMyStoreSteps {

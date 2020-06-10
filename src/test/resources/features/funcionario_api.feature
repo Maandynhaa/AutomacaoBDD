@@ -3,13 +3,13 @@
 Funcionalidade: Teste REST api de Funcionário 
 
 Cenário: Adicionar funcionario
-Dado defino o ponto de extremidade da API de serviço do funcionario
+Dado defino o ponto de extremidade da API de servico do funcionario
 Quando defino o HEADER
-E envio uma solicitaçao HTTP POST 
+E envio uma solicitacao HTTP POST 
 Entao recebo uma resposta valida
 
 Cenário: buscar funcionario
-Dado defino o ponto de extremidade da API de serviço do funcionario GET
+Dado defino o ponto de extremidade da API de servico do funcionario GET
 Quando defino o HEADER
 Entao localizo funcionario
 
