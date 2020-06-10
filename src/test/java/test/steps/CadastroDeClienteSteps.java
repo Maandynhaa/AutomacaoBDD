@@ -67,13 +67,6 @@ public class CadastroDeClienteSteps {
 		driver.findElementById("br.com.dudstecnologia.cadastrodeclientes:id/btnSalvar").click();
 	}
 
-	@Entao("visualizo a mensagem de sucesso")
-	public void visualizo_a_mensagem_de_sucesso() {
-		MobileElement msg = (MobileElement) driver.findElementById("android:id/message");
-		assertEquals("Cadastro efetuado com sucesso", msg.getText());
-		driver.findElementById("android:id/button1").click();
-	}
-
 	@Entao("retorna msg de sucesso")
 	public void retorna_msg_de_sucesso() {
 		MobileElement msg = (MobileElement) driver.findElementById("android:id/message");
