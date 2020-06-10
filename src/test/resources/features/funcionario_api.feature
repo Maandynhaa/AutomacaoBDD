@@ -2,18 +2,18 @@
 @api
 Funcionalidade: Teste REST api de Funcionário 
 
-Cenário: Adicionar funcionário
-Dado defino o ponto de extremidade da API de serviço do funcionário
+Cenário: Adicionar funcionario
+Dado defino o ponto de extremidade da API de serviço do funcionario
 Quando defino o HEADER
 E envio uma solicitaçao HTTP POST 
-Então recebo uma resposta válida
+Entao recebo uma resposta valida
 
-Cenário: buscar funcionário
-Dado defino o ponto de extremidade da API de serviço do funcionário GET
+Cenário: buscar funcionario
+Dado defino o ponto de extremidade da API de serviço do funcionario GET
 Quando defino o HEADER
-Então localizo funcionário
+Entao localizo funcionario
 
-Cenário: deletar funcionário
+Cenário: deletar funcionario
 Dado defino o ponto de extremidade da API de serviço do funcionário DELETE
 Quando defino o HEADER
-Então recebo status válido
+Então recebo status valido

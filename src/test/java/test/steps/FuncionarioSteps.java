@@ -18,7 +18,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.cucumber.java.pt.Dado;
-import io.cucumber.java.pt.Então;
+import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 
 public class FuncionarioSteps {
@@ -37,8 +37,8 @@ public class FuncionarioSteps {
 	public static final String DELETE_URL = "http://dummy.restapiexample.com/api/v1/delete/";
 	public static final int RESPONSE_200 = 200;
 
-	@Dado("defino o ponto de extremidade da API de serviço do funcionário")
-	public void definoOPontoDeExtremidadeDaAPIDeServiçoDoFuncionário() {
+	@Dado("defino o ponto de extremidade da API de serviço do funcionario")
+	public void definoOPontoDeExtremidadeDaAPIDeServiçoDoFuncionario() {
 		requestPost = new HttpPost(CREATE_URL);
 
 	}
@@ -58,8 +58,8 @@ public class FuncionarioSteps {
 
 	}
 
-	@Então("recebo uma resposta válida")
-	public void recebo_uma_resposta_válida() throws IOException {
+	@Entao("recebo uma resposta valida")
+	public void recebo_uma_resposta_valida() throws IOException {
 		JsonNode jsonNode = new ObjectMapper().readTree(httpResponse.getEntity().getContent());
 		JsonNode rootnode = jsonNode.get("data");
 		rootnode.has("id");
@@ -68,13 +68,13 @@ public class FuncionarioSteps {
 		assertNotNull(CREATED_ID);
 	}
 
-	@Dado("defino o ponto de extremidade da API de serviço do funcionário GET")
-	public void definoOPontoDeExtremidadeDaAPIDeServiçoDoFuncionárioGET() {
+	@Dado("defino o ponto de extremidade da API de serviço do funcionario GET")
+	public void definoOPontoDeExtremidadeDaAPIDeServiçoDoFuncionarioGET() {
 		requestGet = new HttpGet(GET_URL + 1);
 	}
 
-	@Então("localizo funcionário")
-	public void localizo_funcionário() throws UnsupportedOperationException, IOException {
+	@Entao("localizo funcionario")
+	public void localizo_funcionario() throws UnsupportedOperationException, IOException {
 		CloseableHttpResponse httpResponse = HttpClientBuilder.create().build().execute(requestGet);
 		JsonNode jsonNode = new ObjectMapper().readTree(httpResponse.getEntity().getContent());
 		assertNotNull(jsonNode);
@@ -88,8 +88,8 @@ public class FuncionarioSteps {
 
 	}
 
-	@Então("recebo status válido")
-	public void receboStatusVálido() throws ClientProtocolException, IOException {
+	@Entao("recebo status valido")
+	public void receboStatusValido() throws ClientProtocolException, IOException {
 		CloseableHttpResponse httpResponse = HttpClientBuilder.create().build().execute(requestDelete);
 		JsonNode jsonNode = new ObjectMapper().readTree(httpResponse.getEntity().getContent());
 		assertNotNull(jsonNode);

@@ -13,7 +13,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
-import io.cucumber.java.pt.Então;
+import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 
 public class ExportacaoDadosSteps {
@@ -47,27 +47,15 @@ public class ExportacaoDadosSteps {
 	public void seleciono(String botao) {
 		String caminhoID = "br.com.dudstecnologia.cadastrodeclientes:id/";
 		driver.findElementById(caminhoID + botao).click();
-//		driver.findElementById("br.com.dudstecnologia.cadastrodeclientes:id/btnExportar").click();
 	}
 
-	@Então("retorna {string} de exportação com sucesso")
-	public void retorna_de_exportação_com_sucesso(String msg) {
+	@Entao("retorna {string} de sucesso")
+	public void retorna_de_sucesso(String msg) {
 		MobileElement msg2 = (MobileElement) driver
 				.findElementById("br.com.dudstecnologia.cadastrodeclientes:id/alertTitle");
 		assertEquals(msg, msg2.getText());
 		driver.findElementById("android:id/button1").click();
 	}
-
-//	@After(order = 1, value = "@mobile")
-//	public void screenshot(Scenario cenario) {
-//		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//		try {
-//			FileUtils.copyFile(file, new File("target/screenshot/" + cenario.getName() + ".jpg"));
-////			driver.quit();
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-//	}
 
 	@After(order = 0, value = "@mobile")
 	public void fechar() {

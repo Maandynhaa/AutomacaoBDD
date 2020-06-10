@@ -10,7 +10,7 @@ Contexto:
 
  Esquema do Cenário: exportação com sucesso
  	Quando seleciono <botao>
-	Então retorna <msg> de exportação com sucesso
+	Entao retorna <msg> de sucesso
  
  Exemplos:
 |botao         |msg        |               

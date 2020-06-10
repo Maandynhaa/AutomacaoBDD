@@ -2,11 +2,11 @@
 @mobile
 Funcionalidade: Realizar cadastro de cliente
 
- Esquema do Cenário: Cadastro de cliente com sucesso
- Dado que esteja na tela de início
+ Esquema do Cenario: Cadastro de cliente com sucesso
+ Dado que esteja na tela de inicio
  Quando informo o dados <nome>,<rg>,<cpf>,<data_nasci>,<rua> ,<numero>,<bairro>,<cep>,<cidade>,<telefone>,<email>
  E seleciono salvar
- Então retorna msg de sucesso
+ Entao retorna msg de sucesso
  
  Exemplos:
 |nome          |rg          |cpf        |data_nasci  |rua       |numero|bairro    |cep        |cidade|telefone     |email             |                 

@@ -13,7 +13,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
-import io.cucumber.java.pt.Então;
+import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 
 public class CadastroDeClienteSteps {
@@ -35,8 +35,8 @@ public class CadastroDeClienteSteps {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
-	@Dado("que esteja na tela de início")
-	public void que_esteja_na_tela_de_início() throws MalformedURLException {
+	@Dado("que esteja na tela de inicio")
+	public void que_esteja_na_tela_de_inicio() throws MalformedURLException {
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
@@ -67,14 +67,14 @@ public class CadastroDeClienteSteps {
 		driver.findElementById("br.com.dudstecnologia.cadastrodeclientes:id/btnSalvar").click();
 	}
 
-	@Então("visualizo a mensagem de sucesso")
+	@Entao("visualizo a mensagem de sucesso")
 	public void visualizo_a_mensagem_de_sucesso() {
 		MobileElement msg = (MobileElement) driver.findElementById("android:id/message");
 		assertEquals("Cadastro efetuado com sucesso", msg.getText());
 		driver.findElementById("android:id/button1").click();
 	}
 
-	@Então("retorna msg de sucesso")
+	@Entao("retorna msg de sucesso")
 	public void retorna_msg_de_sucesso() {
 		MobileElement msg = (MobileElement) driver.findElementById("android:id/message");
 		assertEquals("Cadastro efetuado com sucesso", msg.getText());

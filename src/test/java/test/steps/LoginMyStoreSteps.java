@@ -17,6 +17,7 @@ import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
 
@@ -37,8 +38,8 @@ public class LoginMyStoreSteps {
 		driver.findElement(By.xpath("//a[@class='login']")).click();
 	}
 
-	@Quando("informo o usuário {string}")
-	public void informo_o_usuário(String email) {
+	@Quando("informo o usuario {string}")
+	public void informo_o_usuario(String email) {
 		driver.findElement(By.id("email")).sendKeys(email);
 	}
 
@@ -52,13 +53,13 @@ public class LoginMyStoreSteps {
 		driver.findElement(By.id("SubmitLogin")).click();
 	}
 
-	@Então("visualizo a mensagem {string}")
+	@Entao("visualizo a mensagem {string}")
 	public void visualizoAMensagem(String msg) {
 		String texto = driver.findElement(By.className("info-account")).getText();
 		assertEquals(msg, texto);
 	}
 
-	@Então("visualizo o erro {string}")
+	@Entao("visualizo o erro {string}")
 	public void visualizo_o_erro(String msg) {
 		String texto = driver.findElement(By.xpath("//*[@id=\"center_column\"]/div[1]/ol/li")).getText();
 		assertEquals(msg, texto);
