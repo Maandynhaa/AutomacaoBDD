@@ -14,6 +14,6 @@ Quando defino o HEADER
 Entao localizo funcionario
 
 Cenário: deletar funcionario
-Dado defino o ponto de extremidade da API de serviço do funcionario DELETE
+Dado defino o ponto de extremidade da API de servico do funcionario DELETE
 Quando defino o HEADER
 Então recebo status valido
