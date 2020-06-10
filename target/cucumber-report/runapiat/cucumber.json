@@ -1,0 +1,190 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-10T13:59:04.144Z",
+        "line": 5,
+        "name": "Adicionar funcionário",
+        "description": "",
+        "id": "teste-rest-api-de-funcionário;adicionar-funcionário",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 12369400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "defino o ponto de extremidade da API de serviço do funcionário",
+            "match": {
+              "location": "FuncionarioSteps.definoOPontoDeExtremidadeDaAPIDeServiçoDoFuncionário()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 5678600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "defino o HEADER",
+            "match": {
+              "location": "FuncionarioSteps.defino_o_HEADER()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 2958269500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "envio uma solicitaçao HTTP POST",
+            "match": {
+              "location": "FuncionarioSteps.envio_uma_solicitaçao_HTTP_POST()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 326625100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "recebo uma resposta válida",
+            "match": {
+              "location": "FuncionarioSteps.recebo_uma_resposta_válida()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-10T13:59:07.486Z",
+        "line": 11,
+        "name": "buscar funcionário",
+        "description": "",
+        "id": "teste-rest-api-de-funcionário;buscar-funcionário",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 968300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "defino o ponto de extremidade da API de serviço do funcionário GET",
+            "match": {
+              "location": "FuncionarioSteps.definoOPontoDeExtremidadeDaAPIDeServiçoDoFuncionárioGET()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 699100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "defino o HEADER",
+            "match": {
+              "location": "FuncionarioSteps.defino_o_HEADER()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 871248400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "localizo funcionário",
+            "match": {
+              "location": "FuncionarioSteps.localizo_funcionário()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-10T13:59:08.365Z",
+        "line": 16,
+        "name": "deletar funcionário",
+        "description": "",
+        "id": "teste-rest-api-de-funcionário;deletar-funcionário",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 1430300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "defino o ponto de extremidade da API de serviço do funcionário DELETE",
+            "match": {
+              "location": "FuncionarioSteps.definoOPontoDeExtremidadeDaAPIDeServiçoDoFuncionárioDELETE()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1050200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "defino o HEADER",
+            "match": {
+              "location": "FuncionarioSteps.defino_o_HEADER()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 892415300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "recebo status válido",
+            "match": {
+              "location": "FuncionarioSteps.receboStatusVálido()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "Teste REST api de Funcionário",
+    "description": "",
+    "id": "teste-rest-api-de-funcionário",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/funcionario_api.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

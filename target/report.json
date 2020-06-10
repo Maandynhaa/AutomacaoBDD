@@ -1,0 +1,531 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-10T13:54:27.751Z",
+        "before": [
+          {
+            "result": {
+              "duration": 23932893800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExportacaoDadosSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 21878467800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CadastroDeClienteSteps.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Cadastro de cliente com sucesso",
+        "description": "",
+        "id": "realizar-cadastro-de-cliente;cadastro-de-cliente-com-sucesso;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1302761100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CadastroDeClienteSteps.fechar()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1526246500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExportacaoDadosSteps.fechar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 3141414300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "que esteja na tela de início",
+            "match": {
+              "location": "CadastroDeClienteSteps.que_esteja_na_tela_de_início()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 13628146300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "informo o dados \"Amanda Teste\",\"12123425-2\",\"2719140-9\",\"01/01/2000\",\"Rua Doze\" ,\"123\",\"Capixaba\",\"69922-000\",\"Acre\",\"112554-7474\",\"amanda@teste.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Amanda Teste\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"12123425-2\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"2719140-9\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"01/01/2000\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"Rua Doze\"",
+                  "offset": 69
+                },
+                {
+                  "val": "\"123\"",
+                  "offset": 81
+                },
+                {
+                  "val": "\"Capixaba\"",
+                  "offset": 87
+                },
+                {
+                  "val": "\"69922-000\"",
+                  "offset": 98
+                },
+                {
+                  "val": "\"Acre\"",
+                  "offset": 110
+                },
+                {
+                  "val": "\"112554-7474\"",
+                  "offset": 117
+                },
+                {
+                  "val": "\"amanda@teste.com\"",
+                  "offset": 131
+                }
+              ],
+              "location": "CadastroDeClienteSteps.informo_o_dados(String,String,String,String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 607665700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "seleciono salvar",
+            "match": {
+              "location": "CadastroDeClienteSteps.seleciono_salvar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1440784500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "retorna msg de sucesso",
+            "match": {
+              "location": "CadastroDeClienteSteps.retorna_msg_de_sucesso()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile"
+          }
+        ]
+      }
+    ],
+    "name": "Realizar cadastro de cliente",
+    "description": "",
+    "id": "realizar-cadastro-de-cliente",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/cadastro_de_cliente.feature",
+    "tags": [
+      {
+        "name": "@mobile",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 2454192000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que esteja na tela de exportar dados",
+            "match": {
+              "location": "ExportacaoDadosSteps.que_esteja_na_tela_de_exportar_dados()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-10T13:55:35.270Z",
+        "before": [
+          {
+            "result": {
+              "duration": 18819704400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExportacaoDadosSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 21710933000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CadastroDeClienteSteps.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "exportação com sucesso",
+        "description": "",
+        "id": "realizar-exportação-de-dados;exportação-com-sucesso;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1165321700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CadastroDeClienteSteps.fechar()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1303625900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExportacaoDadosSteps.fechar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 3459673200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "seleciono \"btnExportar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"btnExportar\"",
+                  "offset": 10
+                }
+              ],
+              "location": "ExportacaoDadosSteps.seleciono(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1517666700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "retorna \"Perfeito\" de exportação com sucesso",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Perfeito\"",
+                  "offset": 8
+                }
+              ],
+              "location": "ExportacaoDadosSteps.retorna_de_exportação_com_sucesso(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 2347657000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que esteja na tela de exportar dados",
+            "match": {
+              "location": "ExportacaoDadosSteps.que_esteja_na_tela_de_exportar_dados()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-10T13:56:25.720Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21391375200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExportacaoDadosSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 21048233200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CadastroDeClienteSteps.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "exportação com sucesso",
+        "description": "",
+        "id": "realizar-exportação-de-dados;exportação-com-sucesso;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1119595400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CadastroDeClienteSteps.fechar()"
+            }
+          },
+          {
+            "result": {
+              "duration": 982805100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExportacaoDadosSteps.fechar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 2038916200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "seleciono \"btnBackup\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"btnBackup\"",
+                  "offset": 10
+                }
+              ],
+              "location": "ExportacaoDadosSteps.seleciono(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1306889600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "retorna \"Perfeito!\" de exportação com sucesso",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Perfeito!\"",
+                  "offset": 8
+                }
+              ],
+              "location": "ExportacaoDadosSteps.retorna_de_exportação_com_sucesso(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3039002600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que esteja na tela de exportar dados",
+            "match": {
+              "location": "ExportacaoDadosSteps.que_esteja_na_tela_de_exportar_dados()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-10T13:57:15.964Z",
+        "before": [
+          {
+            "result": {
+              "duration": 19627622000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExportacaoDadosSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 20466748900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CadastroDeClienteSteps.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "exportação com sucesso",
+        "description": "",
+        "id": "realizar-exportação-de-dados;exportação-com-sucesso;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1189488900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CadastroDeClienteSteps.fechar()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1100501000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExportacaoDadosSteps.fechar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 1736887100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "seleciono \"btnRestaurar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"btnRestaurar\"",
+                  "offset": 10
+                }
+              ],
+              "location": "ExportacaoDadosSteps.seleciono(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1693708700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "retorna \"Perfeito!\" de exportação com sucesso",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Perfeito!\"",
+                  "offset": 8
+                }
+              ],
+              "location": "ExportacaoDadosSteps.retorna_de_exportação_com_sucesso(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile"
+          }
+        ]
+      }
+    ],
+    "name": "Realizar exportação de dados",
+    "description": " -exportar excel \n -backup completo\n -restaurar backup",
+    "id": "realizar-exportação-de-dados",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/exportar_dados.feature",
+    "tags": [
+      {
+        "name": "@mobile",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
