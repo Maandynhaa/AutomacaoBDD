@@ -1,7 +1,7 @@
 #language: pt
-
-Funcionalidade: Teste REST api de Funcionário 
 @api
+Funcionalidade: Teste REST api de Funcionário 
+
 Cenário: Adicionar funcionário
 Dado defino o ponto de extremidade da API de serviço do funcionário
 Quando defino o HEADER

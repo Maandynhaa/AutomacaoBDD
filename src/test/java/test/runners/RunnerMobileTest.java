@@ -17,6 +17,6 @@ snippets = SnippetType.CAMELCASE,
 dryRun = false,
 strict = false
 )
-public class TestRunnerMobile {
+public class RunnerMobileTest {
 	
 }

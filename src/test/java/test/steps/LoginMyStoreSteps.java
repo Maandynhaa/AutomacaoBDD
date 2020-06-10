@@ -20,7 +20,7 @@ import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
 
-public class LoginSteps {
+public class LoginMyStoreSteps {
 	WebDriver driver;
 
 	@Before(order = 0, value = "@web")

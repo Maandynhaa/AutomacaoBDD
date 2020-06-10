@@ -16,7 +16,7 @@ import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
 
-public class CadastroClienteSteps {
+public class CadastroDeClienteSteps {
 
 	private AndroidDriver driver;
 

@@ -16,7 +16,7 @@ import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
 
-public class ExportarDadosSteps {
+public class ExportacaoDadosSteps {
 	private AndroidDriver<MobileElement> driver;
 
 	@Before(value = "@mobile")
